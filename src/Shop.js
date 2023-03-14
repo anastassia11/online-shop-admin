@@ -30,8 +30,9 @@ export default function Shop() {
     <>
       <AddItem onFormSubmit={handleFormSubmit} onNameChange={handleNameChange} onDescChange={handleDescChange} name={name} desc={desc} />
       {!items.length && <div>
-        <p className="m-2.5">Добавьте первый товар</p>
-      </div>}
+        <p className="text-center my-4">Добавьте первый товар</p>
+      </div>
+      }
       <ItemsList items={items} onDeleteClick={handleDeleteClick} />
     </>
   );
